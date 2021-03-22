@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/socialApp1/static/css/main.2e0016d8.chunk.css",
-    "main.js": "/socialApp1/static/js/main.892d1b51.chunk.js",
-    "main.js.map": "/socialApp1/static/js/main.892d1b51.chunk.js.map",
-    "runtime-main.js": "/socialApp1/static/js/runtime-main.f8cd60b3.js",
-    "runtime-main.js.map": "/socialApp1/static/js/runtime-main.f8cd60b3.js.map",
-    "static/css/2.abfc3591.chunk.css": "/socialApp1/static/css/2.abfc3591.chunk.css",
-    "static/js/2.13047ea5.chunk.js": "/socialApp1/static/js/2.13047ea5.chunk.js",
-    "static/js/2.13047ea5.chunk.js.map": "/socialApp1/static/js/2.13047ea5.chunk.js.map",
-    "index.html": "/socialApp1/index.html",
-    "static/css/2.abfc3591.chunk.css.map": "/socialApp1/static/css/2.abfc3591.chunk.css.map",
-    "static/css/main.2e0016d8.chunk.css.map": "/socialApp1/static/css/main.2e0016d8.chunk.css.map",
-    "static/js/2.13047ea5.chunk.js.LICENSE.txt": "/socialApp1/static/js/2.13047ea5.chunk.js.LICENSE.txt",
-    "static/media/noreaded.a7c0ab31.svg": "/socialApp1/static/media/noreaded.a7c0ab31.svg",
-    "static/media/readed.da3c9932.svg": "/socialApp1/static/media/readed.da3c9932.svg"
+    "main.css": "/socialApp/static/css/main.2e0016d8.chunk.css",
+    "main.js": "/socialApp/static/js/main.892d1b51.chunk.js",
+    "main.js.map": "/socialApp/static/js/main.892d1b51.chunk.js.map",
+    "runtime-main.js": "/socialApp/static/js/runtime-main.25a97ea2.js",
+    "runtime-main.js.map": "/socialApp/static/js/runtime-main.25a97ea2.js.map",
+    "static/css/2.abfc3591.chunk.css": "/socialApp/static/css/2.abfc3591.chunk.css",
+    "static/js/2.203ed11d.chunk.js": "/socialApp/static/js/2.203ed11d.chunk.js",
+    "static/js/2.203ed11d.chunk.js.map": "/socialApp/static/js/2.203ed11d.chunk.js.map",
+    "index.html": "/socialApp/index.html",
+    "static/css/2.abfc3591.chunk.css.map": "/socialApp/static/css/2.abfc3591.chunk.css.map",
+    "static/css/main.2e0016d8.chunk.css.map": "/socialApp/static/css/main.2e0016d8.chunk.css.map",
+    "static/js/2.203ed11d.chunk.js.LICENSE.txt": "/socialApp/static/js/2.203ed11d.chunk.js.LICENSE.txt",
+    "static/media/noreaded.a7c0ab31.svg": "/socialApp/static/media/noreaded.a7c0ab31.svg",
+    "static/media/readed.da3c9932.svg": "/socialApp/static/media/readed.da3c9932.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8cd60b3.js",
+    "static/js/runtime-main.25a97ea2.js",
     "static/css/2.abfc3591.chunk.css",
-    "static/js/2.13047ea5.chunk.js",
+    "static/js/2.203ed11d.chunk.js",
     "static/css/main.2e0016d8.chunk.css",
     "static/js/main.892d1b51.chunk.js"
   ]
