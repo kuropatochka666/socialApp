@@ -1,0 +1,161 @@
+@import "../../styles/variables.scss";
+.message {
+	$self: &;
+	display: flex;
+	margin-bottom: 15px;
+
+	&__avatar {
+		display: flex;
+		flex-direction: column-reverse;
+		max-width: 33px;
+		// min-width: 33px;
+		// height: 33px;
+		margin-right: 13px;
+		margin-bottom: 23px;
+
+		img {
+			// width: 100%;
+			// height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__content {
+		max-width: 440px;
+	}
+	&__bubble {
+		background: $blue;
+		box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733);
+		border-radius: 12px 12px 12px 0px;
+		margin-bottom: 8px;
+		img {
+			display: none;
+		}
+
+		p {
+			color: #ffffff;
+			padding: 15px;
+			line-height: 20px;
+			margin-bottom: 0;
+		}
+	}
+	&__date {
+		font-size: 12px;
+		opacity: 0.5;
+		width: 100%;
+	}
+	&__attachments {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 200px;
+		&-item {
+			cursor: pointer;
+			max-width: 45px;
+			max-height: 45px;
+			min-width: 20px;
+			min-height: 20px;
+			margin-right: 4px;
+			margin-bottom: 5px;
+
+			img {
+				border-radius: 8px;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&-user {
+		display: flex;
+		flex-direction: row-reverse;
+		#{$self}__bubble {
+			background: #ffffff;
+			border: 1px solid #ececec;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.0220444);
+			border-radius: 12px 12px 0px 12px;
+
+			p {
+				color: #000000;
+			}
+		}
+		#{$self}__content {
+			position: relative;
+		}
+		#{$self}__avatar {
+			margin-right: 0;
+			margin-left: 13px;
+		}
+		#{$self}__date {
+			text-align: right;
+		}
+		#{$self}__checked-icon {
+			display: block;
+			position: absolute;
+			bottom: 25px;
+			left: -25px;
+		}
+	}
+	&-typing {
+		#{$self}__bubble {
+			background-color: $message-typing-blue;
+			box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.04);
+			padding: 15px 18px;
+			margin-bottom: 0;
+		}
+		#{$self}__avatar {
+			margin-top: 10px;
+		}
+	}
+	&__typing {
+		// padding: 10px;
+		span {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background: $message-typing-circle;
+			display: inline-block;
+
+			margin-right: 8px;
+			animation: 0.8s typingAnimation infinite ease-out 0.1s;
+
+			&:nth-of-type(2) {
+				animation: 0.8s typingAnimation infinite ease-out 0.2s;
+			}
+			&:nth-of-type(3) {
+				animation: 0.8s typingAnimation infinite ease-out 0.3s;
+				margin-right: 0;
+			}
+		}
+	}
+	&-image {
+		#{$self}__attachments {
+			&-item {
+				height: 150px;
+				width: 150px;
+				max-width: initial;
+				max-height: initial;
+				margin-right: 0;
+				margin-bottom: 0;
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+		#{$self}__avatar {
+			margin-bottom: 0;
+		}
+	}
+}
+@keyframes typingAnimation {
+	from {
+		opacity: 0.2;
+		transform: translateY(0px);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateY(-1.5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-1px);
+	}
+}
