@@ -4,3 +4,4 @@ export { default as Message } from "./Message";
 export { default as Dialogitem } from "./Dialogitem";
 export { default as Time } from "./Time";
 export { default as MessageStatus } from "./MessageStatus";
+export { default as Dialogs } from "./Dialogs";

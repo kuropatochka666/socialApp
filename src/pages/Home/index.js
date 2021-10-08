@@ -1,69 +1,27 @@
 import React from "react";
 
-import { Message, Dialogitem } from "../../components";
+import {Message, Dialogitem, Dialogs} from "../../components";
 
 import "./Home.scss";
 
 const Home = () => {
-	return (
-		<section className='dialog-page'>
-			<div className='dialog'>
-				<Dialogitem
-					user={{
-						fullname: "Simon vern",
-						isOnline: true,
-					}}
-					unreaded={3}
-					online
-				/>
-			</div>
-			<div className='dialog'>
-				<Dialogitem
-					user={{
-						fullname: "Simon vern",
-						isOnline: true,
-					}}
-					unreaded={3}
-					online
-				/>
-			</div>
-			<div className='dialog'>
-				<Dialogitem
-					user={{
-						fullname: "Simon vern",
-						isOnline: true,
-					}}
-					unreaded={3}
-					online
-				/>
-			</div>
-			<div className='dialog'>
-				<Dialogitem
-					user={{
-						fullname: "Simon vern",
-						isOnline: true,
-					}}
-					unreaded={3}
-					online
-				/>
-			</div>
+    return (
+        <section className='dialog-page'>
+            <Dialogs
+                items={[{
+                    user: {
+                        fullname: "simon vern",
+                        avatar: null,
+                    },
+                    lastMessage: {
+                        text: "Привет, как дела?",
+                        isReaded: false,
+                        created_at: new Date(),
+                    }
+                }
 
-			{/* <Dialog
-				items={[
-					{
-						user: {
-							fullname: "Смердев Александр",
-							avatar: null,
-						},
-						message: {
-							text: "Да да я",
-							isReaded: false,
-							created_at: new Date(),
-						},
-					},
-				]}
-			/> */}
-			{/* <Message
+                ]}/>
+            {/* <Message
 				avatar='https://sun3-10.userapi.com/s/v1/ig2/ivAQWpiptCSriFTRVuJ4n2mz2YnURl-GOIltzJ3Y-7NOVlA24ghML8sguMdpsntOk6KCbC1rPrrHvqTYuJAUlVII.jpg?size=100x0&quality=96&crop=10,0,949,949&ava=1'
 				text='п-п-п привет'
 				date={new Date()}
@@ -102,8 +60,8 @@ const Home = () => {
 					},
 				]}
 			/> */}
-		</section>
-	);
+        </section>
+    );
 };
 
 export default Home;

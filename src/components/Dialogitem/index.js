@@ -12,7 +12,7 @@ function getAvatar(avatar) {
 	}
 }
 
-function Dialogitem({ user, message, unreaded }) {
+function Dialogitem({ user, lastMessage, unreaded }) {
 	return (
 		<div
 			className={classNames("dialog__item", {
