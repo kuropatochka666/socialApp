@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Message, Dialogitem, Dialogs} from "../../components";
+import {Message, Dialogs} from "../../components";
 
 import "./Home.scss";
 
@@ -8,17 +8,28 @@ const Home = () => {
     return (
         <section className='dialog-page'>
             <Dialogs
-                items={[{
-                    user: {
-                        fullname: "simon vern",
-                        avatar: null,
-                    },
-                    lastMessage: {
+                userId={0}
+                items={[
+                    {
                         text: "Привет, как дела?",
                         isReaded: false,
                         created_at: new Date(),
+                        user: {
+                            _id: 1,
+                            fullname: "Simon Vern",
+                            avatar: "https://sun3-10.userapi.com/s/v1/ig2/ivAQWpiptCSriFTRVuJ4n2mz2YnURl-GOIltzJ3Y-7NOVlA24ghML8sguMdpsntOk6KCbC1rPrrHvqTYuJAUlVII.jpg?size=100x0&quality=96&crop=10,0,949,949&ava=1",
+                        }
+                    },
+                    {
+                        text: "Я тебя убью",
+                        isReaded: false,
+                        created_at: new Date(),
+                        user: {
+                            _id: 2,
+                            fullname: "Андрей новиков",
+                            avatar: "https://vk.com/images/camera_100.png",
+                        }
                     }
-                }
 
                 ]}/>
             {/* <Message
